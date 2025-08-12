@@ -1,0 +1,1786 @@
+{
+    "Document": {
+        "ObjectName": "Scenario::ScenarioDocumentModel",
+        "id": 1,
+        "BaseScenario": {
+            "ObjectName": "Scenario::BaseScenario",
+            "id": 0,
+            "Constraint": {
+                "ObjectName": "Scenario::IntervalModel",
+                "id": 0,
+                "Metadata": {
+                    "ScriptingName": "test-js-gfx",
+                    "Comment": "",
+                    "Color": "Transparent1",
+                    "Label": "",
+                    "Touched": true
+                },
+                "Inlet": {
+                    "uuid": "a1574bb0-cbd4-4c7d-9417-0c25cfd1187b",
+                    "ObjectName": "Inlet",
+                    "id": 0,
+                    "Hidden": false,
+                    "Custom": "Audio in",
+                    "Exposed": "audio in"
+                },
+                "Outlet": {
+                    "uuid": "a1d97535-18ac-444a-8417-0cbc1692d897",
+                    "ObjectName": "Outlet",
+                    "id": 0,
+                    "Hidden": false,
+                    "Custom": "Audio out",
+                    "Exposed": "audio out",
+                    "GainInlet": {
+                        "uuid": "9a13fb32-269a-47bf-99a9-930188c1f19c",
+                        "ObjectName": "Inlet",
+                        "id": 10000,
+                        "Hidden": false,
+                        "Custom": "Gain",
+                        "Exposed": "gain",
+                        "Value": {},
+                        "Domain": {
+                            "Float": {
+                                "Min": 0.0,
+                                "Max": 1.0
+                            }
+                        }
+                    },
+                    "PanInlet": {
+                        "uuid": "9a13fb32-269a-47bf-99a9-930188c1f19c",
+                        "ObjectName": "Inlet",
+                        "id": 10001,
+                        "Hidden": false,
+                        "Custom": "Pan",
+                        "Exposed": "pan",
+                        "Value": {},
+                        "Domain": {}
+                    },
+                    "Gain": 1.0,
+                    "Pan": [
+                        1.0,
+                        1.0
+                    ],
+                    "Propagate": true
+                },
+                "Processes": [
+                    {
+                        "uuid": "de035912-5b03-49a8-bc4d-b2cba68e21d9",
+                        "ObjectName": "Scenario",
+                        "id": 1,
+                        "Metadata": {
+                            "ScriptingName": "Scenario.1",
+                            "Comment": "",
+                            "Color": "Transparent1",
+                            "Label": "",
+                            "Touched": false
+                        },
+                        "Duration": 10584000000,
+                        "Height": 1500.0,
+                        "StartOffset": 0,
+                        "LoopDuration": 10584000000,
+                        "Pos": [
+                            40.0,
+                            40.0
+                        ],
+                        "Size": [
+                            200.0,
+                            100.0
+                        ],
+                        "Loops": false,
+                        "Inlet": {
+                            "uuid": "a1574bb0-cbd4-4c7d-9417-0c25cfd1187b",
+                            "ObjectName": "Inlet",
+                            "id": 0,
+                            "Hidden": false,
+                            "Custom": "In",
+                            "Exposed": "in"
+                        },
+                        "Outlet": {
+                            "uuid": "a1d97535-18ac-444a-8417-0cbc1692d897",
+                            "ObjectName": "Outlet",
+                            "id": 0,
+                            "Hidden": false,
+                            "Custom": "Out",
+                            "Exposed": "out",
+                            "GainInlet": {
+                                "uuid": "9a13fb32-269a-47bf-99a9-930188c1f19c",
+                                "ObjectName": "Inlet",
+                                "id": 10000,
+                                "Hidden": false,
+                                "Custom": "Gain",
+                                "Exposed": "gain",
+                                "Value": {},
+                                "Domain": {
+                                    "Float": {
+                                        "Min": 0.0,
+                                        "Max": 1.0
+                                    }
+                                }
+                            },
+                            "PanInlet": {
+                                "uuid": "9a13fb32-269a-47bf-99a9-930188c1f19c",
+                                "ObjectName": "Inlet",
+                                "id": 10001,
+                                "Hidden": false,
+                                "Custom": "Pan",
+                                "Exposed": "pan",
+                                "Value": {},
+                                "Domain": {}
+                            },
+                            "Gain": 1.0,
+                            "Pan": [
+                                1.0,
+                                1.0
+                            ],
+                            "Propagate": true
+                        },
+                        "StartTimeNodeId": 0,
+                        "StartEventId": 0,
+                        "StartStateId": 0,
+                        "Exclusive": false,
+                        "TimeNodes": [
+                            {
+                                "ObjectName": "Scenario::TimeSyncModel",
+                                "id": 0,
+                                "Metadata": {
+                                    "ScriptingName": "Sync.start",
+                                    "Comment": "",
+                                    "Color": "Gray",
+                                    "Label": "",
+                                    "Touched": true
+                                },
+                                "Date": 0,
+                                "Events": [
+                                    0
+                                ],
+                                "MusicalSync": -1.0,
+                                "AutoTrigger": false,
+                                "Start": true,
+                                "Active": false,
+                                "Expression": " { true == false } "
+                            },
+                            {
+                                "ObjectName": "Scenario::TimeSyncModel",
+                                "id": 1,
+                                "Metadata": {
+                                    "ScriptingName": "Sync.atop86",
+                                    "Comment": "",
+                                    "Color": "Gray",
+                                    "Label": "",
+                                    "Touched": true
+                                },
+                                "Date": 4839189101,
+                                "Events": [
+                                    1
+                                ],
+                                "MusicalSync": -1.0,
+                                "AutoTrigger": false,
+                                "Start": false,
+                                "Active": true,
+                                "Expression": " { true == false } "
+                            }
+                        ],
+                        "Events": [
+                            {
+                                "ObjectName": "Scenario::EventModel",
+                                "id": 0,
+                                "Metadata": {
+                                    "ScriptingName": "Event.start",
+                                    "Comment": "",
+                                    "Color": "Emphasis4",
+                                    "Label": "",
+                                    "Touched": true
+                                },
+                                "TimeNode": 0,
+                                "States": [
+                                    0,
+                                    1
+                                ],
+                                "Condition": "",
+                                "Date": 0,
+                                "Offset": 0
+                            },
+                            {
+                                "ObjectName": "Scenario::EventModel",
+                                "id": 1,
+                                "Metadata": {
+                                    "ScriptingName": "Event.swag76",
+                                    "Comment": "",
+                                    "Color": "Emphasis4",
+                                    "Label": "",
+                                    "Touched": true
+                                },
+                                "TimeNode": 1,
+                                "States": [
+                                    2
+                                ],
+                                "Condition": "",
+                                "Date": 4839189101,
+                                "Offset": 0
+                            }
+                        ],
+                        "States": [
+                            {
+                                "ObjectName": "Scenario::StateModel",
+                                "id": 0,
+                                "Metadata": {
+                                    "ScriptingName": "State.start",
+                                    "Comment": "",
+                                    "Color": "Base1",
+                                    "Label": "",
+                                    "Touched": true
+                                },
+                                "Event": 0,
+                                "PreviousConstraint": null,
+                                "NextConstraint": null,
+                                "HeightPercentage": 0.02,
+                                "Messages": {
+                                    "Name": "",
+                                    "Accessors": [],
+                                    "Unit": "none",
+                                    "Previous": [],
+                                    "Following": [],
+                                    "User": null,
+                                    "Priorities": [
+                                        1,
+                                        2,
+                                        0
+                                    ]
+                                },
+                                "Controls": [],
+                                "StateProcesses": []
+                            },
+                            {
+                                "ObjectName": "Scenario::StateModel",
+                                "id": 1,
+                                "Metadata": {
+                                    "ScriptingName": "State.thaw78",
+                                    "Comment": "",
+                                    "Color": "Base1",
+                                    "Label": "",
+                                    "Touched": true
+                                },
+                                "Event": 0,
+                                "PreviousConstraint": null,
+                                "NextConstraint": 1,
+                                "HeightPercentage": 0.102,
+                                "Messages": {
+                                    "Name": "",
+                                    "Accessors": [],
+                                    "Unit": "none",
+                                    "Previous": [],
+                                    "Following": [],
+                                    "User": null,
+                                    "Priorities": [
+                                        1,
+                                        2,
+                                        0
+                                    ]
+                                },
+                                "Controls": [],
+                                "StateProcesses": []
+                            },
+                            {
+                                "ObjectName": "Scenario::StateModel",
+                                "id": 2,
+                                "Metadata": {
+                                    "ScriptingName": "State.dirt24",
+                                    "Comment": "",
+                                    "Color": "Base1",
+                                    "Label": "",
+                                    "Touched": true
+                                },
+                                "Event": 1,
+                                "PreviousConstraint": 1,
+                                "NextConstraint": null,
+                                "HeightPercentage": 0.102,
+                                "Messages": {
+                                    "Name": "",
+                                    "Accessors": [],
+                                    "Unit": "none",
+                                    "Previous": [],
+                                    "Following": [],
+                                    "User": null,
+                                    "Priorities": [
+                                        1,
+                                        2,
+                                        0
+                                    ]
+                                },
+                                "Controls": [],
+                                "StateProcesses": []
+                            }
+                        ],
+                        "Constraints": [
+                            {
+                                "ObjectName": "Scenario::IntervalModel",
+                                "id": 1,
+                                "Metadata": {
+                                    "ScriptingName": "Interval.torr30",
+                                    "Comment": "",
+                                    "Color": "Transparent1",
+                                    "Label": "",
+                                    "Touched": true
+                                },
+                                "Inlet": {
+                                    "uuid": "a1574bb0-cbd4-4c7d-9417-0c25cfd1187b",
+                                    "ObjectName": "Inlet",
+                                    "id": 0,
+                                    "Hidden": false,
+                                    "Custom": "Audio in",
+                                    "Exposed": "audio in"
+                                },
+                                "Outlet": {
+                                    "uuid": "a1d97535-18ac-444a-8417-0cbc1692d897",
+                                    "ObjectName": "Outlet",
+                                    "id": 0,
+                                    "Hidden": false,
+                                    "Custom": "Audio out",
+                                    "Exposed": "audio out",
+                                    "GainInlet": {
+                                        "uuid": "9a13fb32-269a-47bf-99a9-930188c1f19c",
+                                        "ObjectName": "Inlet",
+                                        "id": 10000,
+                                        "Hidden": false,
+                                        "Custom": "Gain",
+                                        "Exposed": "gain",
+                                        "Value": {},
+                                        "Domain": {
+                                            "Float": {
+                                                "Min": 0.0,
+                                                "Max": 1.0
+                                            }
+                                        }
+                                    },
+                                    "PanInlet": {
+                                        "uuid": "9a13fb32-269a-47bf-99a9-930188c1f19c",
+                                        "ObjectName": "Inlet",
+                                        "id": 10001,
+                                        "Hidden": false,
+                                        "Custom": "Pan",
+                                        "Exposed": "pan",
+                                        "Value": {},
+                                        "Domain": {}
+                                    },
+                                    "Gain": 1.0,
+                                    "Pan": [
+                                        1.0,
+                                        1.0
+                                    ],
+                                    "Propagate": true
+                                },
+                                "Processes": [
+                                    {
+                                        "uuid": "d2a67bd8-5d3f-404e-b6e9-e350cf2a833f",
+                                        "ObjectName": "Automation",
+                                        "id": 3,
+                                        "Metadata": {
+                                            "ScriptingName": "Automation (float).3",
+                                            "Comment": "",
+                                            "Color": "Transparent1",
+                                            "Label": "",
+                                            "Touched": false
+                                        },
+                                        "Duration": 4839189101,
+                                        "Height": 300.0,
+                                        "StartOffset": 0,
+                                        "LoopDuration": 4839189101,
+                                        "Pos": [
+                                            50.0,
+                                            50.0
+                                        ],
+                                        "Size": [
+                                            200.0,
+                                            100.0
+                                        ],
+                                        "Loops": true,
+                                        "Outlet": {
+                                            "uuid": "047e4cc2-4d99-4e8b-bf98-206018d02274",
+                                            "ObjectName": "Outlet",
+                                            "id": 0,
+                                            "Hidden": false,
+                                            "Custom": "Out",
+                                            "Exposed": "out",
+                                            "MinInlet": {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 0,
+                                                "Hidden": false,
+                                                "Custom": "Control",
+                                                "Exposed": "control",
+                                                "Value": {
+                                                    "Float": 0.0
+                                                },
+                                                "Domain": {}
+                                            },
+                                            "MaxInlet": {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 1,
+                                                "Hidden": false,
+                                                "Custom": "Control",
+                                                "Exposed": "control",
+                                                "Value": {
+                                                    "Float": 1000.0
+                                                },
+                                                "Domain": {}
+                                            }
+                                        },
+                                        "Curve": {
+                                            "ObjectName": "CurveModel",
+                                            "id": 45345,
+                                            "Segments": [
+                                                {
+                                                    "uuid": "1e7cb83f-4e47-4b14-814d-2242a9c75991",
+                                                    "ObjectName": "CurveSegmentModel",
+                                                    "id": -160445916,
+                                                    "Previous": null,
+                                                    "Following": 775378496,
+                                                    "Start": [
+                                                        0.0,
+                                                        0.005
+                                                    ],
+                                                    "End": [
+                                                        0.2146189735614308,
+                                                        0.7
+                                                    ],
+                                                    "Power": 0.21168632809063176
+                                                },
+                                                {
+                                                    "uuid": "1e7cb83f-4e47-4b14-814d-2242a9c75991",
+                                                    "ObjectName": "CurveSegmentModel",
+                                                    "id": 775378496,
+                                                    "Previous": -160445916,
+                                                    "Following": -1646962377,
+                                                    "Start": [
+                                                        0.2146189735614308,
+                                                        0.7
+                                                    ],
+                                                    "End": [
+                                                        0.38258164852255055,
+                                                        0.18000000000000005
+                                                    ],
+                                                    "Power": 0.09739557245756246
+                                                },
+                                                {
+                                                    "uuid": "1e7cb83f-4e47-4b14-814d-2242a9c75991",
+                                                    "ObjectName": "CurveSegmentModel",
+                                                    "id": -1646962377,
+                                                    "Previous": 775378496,
+                                                    "Following": 0,
+                                                    "Start": [
+                                                        0.38258164852255055,
+                                                        0.18000000000000005
+                                                    ],
+                                                    "End": [
+                                                        0.463452566096423,
+                                                        0.8
+                                                    ],
+                                                    "Power": 0.15177436054938087
+                                                },
+                                                {
+                                                    "uuid": "1e7cb83f-4e47-4b14-814d-2242a9c75991",
+                                                    "ObjectName": "CurveSegmentModel",
+                                                    "id": 0,
+                                                    "Previous": -1646962377,
+                                                    "Following": null,
+                                                    "Start": [
+                                                        0.463452566096423,
+                                                        0.8
+                                                    ],
+                                                    "End": [
+                                                        1.0,
+                                                        0.005
+                                                    ],
+                                                    "Power": 0.10881882041201556
+                                                }
+                                            ]
+                                        },
+                                        "Tween": false
+                                    },
+                                    {
+                                        "uuid": "d2a67bd8-5d3f-404e-b6e9-e350cf2a833f",
+                                        "ObjectName": "Automation",
+                                        "id": 2,
+                                        "Metadata": {
+                                            "ScriptingName": "Automation (float).2",
+                                            "Comment": "",
+                                            "Color": "Transparent1",
+                                            "Label": "",
+                                            "Touched": false
+                                        },
+                                        "Duration": 4839189101,
+                                        "Height": 300.0,
+                                        "StartOffset": 0,
+                                        "LoopDuration": 4839189101,
+                                        "Pos": [
+                                            60.0,
+                                            60.0
+                                        ],
+                                        "Size": [
+                                            200.0,
+                                            100.0
+                                        ],
+                                        "Loops": true,
+                                        "Outlet": {
+                                            "uuid": "047e4cc2-4d99-4e8b-bf98-206018d02274",
+                                            "ObjectName": "Outlet",
+                                            "id": 0,
+                                            "Hidden": false,
+                                            "Custom": "Out",
+                                            "Exposed": "out",
+                                            "MinInlet": {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 0,
+                                                "Hidden": false,
+                                                "Custom": "Control",
+                                                "Exposed": "control",
+                                                "Value": {
+                                                    "Float": -0.0
+                                                },
+                                                "Domain": {}
+                                            },
+                                            "MaxInlet": {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 1,
+                                                "Hidden": false,
+                                                "Custom": "Control",
+                                                "Exposed": "control",
+                                                "Value": {
+                                                    "Float": 1000.0
+                                                },
+                                                "Domain": {}
+                                            }
+                                        },
+                                        "Curve": {
+                                            "ObjectName": "CurveModel",
+                                            "id": 45345,
+                                            "Segments": [
+                                                {
+                                                    "uuid": "1e7cb83f-4e47-4b14-814d-2242a9c75991",
+                                                    "ObjectName": "CurveSegmentModel",
+                                                    "id": -1298289004,
+                                                    "Previous": null,
+                                                    "Following": 0,
+                                                    "Start": [
+                                                        0.0,
+                                                        1.0
+                                                    ],
+                                                    "End": [
+                                                        0.07620528771384137,
+                                                        0.0
+                                                    ],
+                                                    "Power": 1.0
+                                                },
+                                                {
+                                                    "uuid": "93cac01a-dedc-4cb4-ad2d-d81b31e6187c",
+                                                    "ObjectName": "CurveSegmentModel",
+                                                    "id": 0,
+                                                    "Previous": -1298289004,
+                                                    "Following": null,
+                                                    "Start": [
+                                                        0.07620528771384137,
+                                                        0.0
+                                                    ],
+                                                    "End": [
+                                                        1.0,
+                                                        1.0
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "Tween": false
+                                    },
+                                    {
+                                        "uuid": "846a5de5-47f9-46c5-a898-013cb20951d0",
+                                        "ObjectName": "Javascript",
+                                        "id": 1,
+                                        "Metadata": {
+                                            "ScriptingName": "Javascript",
+                                            "Comment": "",
+                                            "Color": "Transparent1",
+                                            "Label": "",
+                                            "Touched": true
+                                        },
+                                        "Duration": 4839189101,
+                                        "Height": 300.0,
+                                        "StartOffset": 0,
+                                        "LoopDuration": 4839189101,
+                                        "Pos": [
+                                            -77.0,
+                                            32.0
+                                        ],
+                                        "Size": [
+                                            96.734375,
+                                            22.0
+                                        ],
+                                        "Loops": false,
+                                        "Script": "import Score\nimport QtQuick \n\nScript {\n    FloatSlider { id: slider_x; min: 0; max: 100; objectName: \"X\" } \n    FloatSlider { id: slider_y; min: 0; max: 100; objectName: \"Y\" }\n    TextureOutlet {\n        item: \n        Item {\n            id: item\n        width: 300\n        height: 300\n        //color: \"red\"\n        Column {\n          anchors.fill: parent\n            \n          Repeater {\n            model: textLines\n            Text {\n                required property string modelData\n                text: modelData\n                antialiasing: false\n                font { \n                  pointSize: 32\n                  family: \"AcPlus IBM VGA 8x14\"\n                }\n                renderType: Text.NativeRendering\n                color: \"#C0C0C0\"\n            }\n            }\n        }\n        \n    }\n    }\n    \n    property var textLines : [ ]\n    property var bootLog: \n    [\"[    4.585941] Bluetooth: hci0: Debug lock is disabled\",\n\"[    4.585941] Bluetooth: hci0: Minimum firmware build 1 week 10 2014\",\n\"[    4.592567] Bluetooth: hci0: Found device firmware: intel/ibt-17-16-1.sfi\",\n\"[    4.592658] Bluetooth: hci0: Boot Address: 0x40800\",\n\"[    4.592660] Bluetooth: hci0: Firmware Version: 108-45.22\",\n\"[    4.595993] i915 0000:00:02.0: [drm] Cannot find any crtc or sizes\",\n\"[    4.607553] i915 0000:00:02.0: [drm] Cannot find any crtc or sizes\",\n\"[    4.617793] Bluetooth: BNEP (Ethernet Emulation) ver 1.3\",\n\"[    4.617796] Bluetooth: BNEP filters: protocol multicast\",\n\"[    4.617800] Bluetooth: BNEP socket layer initialized\",\n\"[    4.768639] iwlwifi 0000:00:14.3: Registered PHC clock: iwlwifi-PTP, with index: 0\",\n\"[    6.385556] Bluetooth: hci0: Waiting for firmware download to complete\",\n\"[    6.385947] Bluetooth: hci0: Firmware loaded in 1751344 usecs\",\n\"[    6.386065] Bluetooth: hci0: Waiting for device to boot\",\n\"[    6.400058] Bluetooth: hci0: Device booted in 13750 usecs\",\n\"[    6.400060] Bluetooth: hci0: Malformed MSFT vendor event: 0x02\",\n\"[    6.407092] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-17-16-1.ddc\",\n\"[    6.409170] Bluetooth: hci0: Applying Intel DDC parameters completed\",\n\"[    6.410153] Bluetooth: hci0: Firmware revision 0.1 build 108 week 45 2022\",\n\"[    6.471420] Bluetooth: MGMT ver 1.22\",\n\"[    6.488103] NET: Registered PF_ALG protocol family\",\n\"[    6.609490] Bluetooth: hci0: Bad flag given (0x1) vs supported (0x0)\",\n\"[    8.625306] wlo1: authenticate with 00:23:6a:72:1c:4e\",\n\"[    8.625336] wlo1: 80 MHz not supported, disabling VHT\",\n\"[    8.626919] wlo1: send auth to 00:23:6a:72:1c:4e (try 1/3)\",\n\"[    8.705522] wlo1: authenticated\",\n\"[    8.707768] wlo1: associate with 00:23:6a:72:1c:4e (try 1/3)\",\n\"[    8.713597] wlo1: RX AssocResp from 00:23:6a:72:1c:4e (capab=0x411 status=0 aid=1)\",\n\"[    8.718326] wlo1: associated\",\n\"[    8.974753] IPv6: ADDRCONF(NETDEV_CHANGE): wlo1: link becomes ready\",\n\"[   15.334991] snd_hda_intel 0000:01:00.1: Unable to change power state from D0 to D3hot, device inaccessible\",\n\"[   18.045729] input: MX Master 3 Keyboard as /devices/virtual/misc/uhid/0005:046D:B023.0003/input/input18\",\n\"[   18.046038] input: MX Master 3 Mouse as /devices/virtual/misc/uhid/0005:046D:B023.0003/input/input19\",\n\"[   18.046688] hid-generic 0005:046D:B023.0003: input,hidraw2: BLUETOOTH HID v0.13 Keyboard [MX Master 3] on 94:b8:6d:70:ac:55\",\n\"[   18.172077] input: MX Master 3 as /devices/virtual/misc/uhid/0005:046D:B023.0003/input/input21\",\n\"[   18.172701] logitech-hidpp-device 0005:046D:B023.0003: input,hidraw2: BLUETOOTH HID v0.13 Keyboard [MX Master 3] on 94:b8:6d:70:ac:55\",\n\"[   18.758090] logitech-hidpp-device 0005:046D:B023.0003: HID++ 4.5 device connected.\",\n\"[   25.714523] usb 2-2: USB disconnect, device number 2\",\n\"[   26.586336] systemd-journald[255]: /var/log/journal/e0fe8c0eb5314e0c9d0c5101f8a250f6/user-1000.journal: Boot ID changed since last record, rotating.\",\n\"[   26.811318] usb 2-2: new SuperSpeed USB device number 3 using xhci_hcd\",\n\"[   26.888421] snd_hda_intel 0000:01:00.1: Unable to change power state from D3cold to D0, device inaccessible\",\n\"[   27.065536] usb 2-2: New USB device found, idVendor=2109, idProduct=0812, bcdDevice= d.a1\",\n\"[   27.065551] usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0\",\n\"[   27.065556] usb 2-2: Product: USB3.0 Hub             \",\n\"[   27.065560] usb 2-2: Manufacturer: VIA Labs, Inc.         \",\n\"[   27.068594] hub 2-2:1.0: USB hub found\",\n\"[   27.069022] hub 2-2:1.0: 4 ports detected\",\n\"[   27.184462] usb 1-4: new full-speed USB device number 8 using xhci_hcd\",\n\"[   27.257796] snd_hda_codec_hdmi hdaudioC1D0: Unable to sync register 0x6f0800. -5\",\n\"[   27.257804] snd_hda_codec_hdmi hdaudioC1D0: HDMI: invalid ELD buf size -1\",\n\"[   27.257806] snd_hda_codec_hdmi hdaudioC1D0: HDMI: invalid ELD buf size -1\",\n\"[   27.307849] usb 1-4: device descriptor read/64, error -71\",\n\"[   27.537836] usb 1-4: device descriptor read/64, error -71\",\n\"[   27.619667] Bluetooth: RFCOMM TTY layer initialized\",\n\"[   27.619674] Bluetooth: RFCOMM socket layer initialized\",\n\"[   27.619676] Bluetooth: RFCOMM ver 1.11\",\n\"[   27.767790] usb 1-4: new full-speed USB device number 9 using xhci_hcd\",\n\"[   27.891185] usb 1-4: device descriptor read/64, error -71\",\n\"[   28.121052] usb 1-4: device descriptor read/64, error -71\",\n\"[   28.227942] usb usb1-port4: attempt power cycle\",\n\"[   28.631101] usb 1-4: new full-speed USB device number 10 using xhci_hcd\",\n\"[   28.631357] usb 1-4: Device not responding to setup address.\",\n\"[   28.838029] usb 1-4: Device not responding to setup address.\",\n\"[   29.044470] usb 1-4: device not accepting address 10, error -71\",\n\"[   29.167814] usb 1-4: new full-speed USB device number 11 using xhci_hcd\",\n\"[   29.168025] usb 1-4: Device not responding to setup address.\",\n\"[   29.374482] usb 1-4: Device not responding to setup address.\",\n\"[   29.581024] usb 1-4: device not accepting address 11, error -71\",\n\"[   29.581090] usb usb1-port4: unable to enumerate USB device\",\n\"[   30.256505] nvidia: module license 'NVIDIA' taints kernel.\",\n\"[   30.256509] Disabling lock debugging due to kernel taint\",\n\"[   30.256512] Reticulating splines.........................\",\n\"............................................................\",\n\"..................................................... PASS !\",\n\"[   30.356511] nvidia: module license taints kernel.\",\n\"[   30.437797] nvidia-nvlink: Nvlink Core is being initialized, major device number 511\",\n\"[   30.580087] nvidia 0000:01:00.0: enabling device (0000 -> 0003)\",\n\"[   30.580232] nvidia 0000:01:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=none:owns=none\",\n\"[   30.696514] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  535.98  Tue Aug  1 21:42:05 UTC 2023\",\n\"[   30.764462] nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  535.98  Tue Aug  1 21:40:14 UTC 2023\",\n\"[   30.963862] [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver\",\n\"[   32.247058] [drm] Initialized nvidia-drm 0.0.0 20160202 for 0000:01:00.0 on minor 1\",\n\"[   32.344211] nvidia_uvm: module uses symbols nvUvmInterfaceDisableAccessCntr from proprietary module nvidia, inheriting taint.\",\n\"[   32.474948] nvidia-uvm: Loaded the UVM driver, major device number 509.\",\n\"[   35.419844] i915 0000:00:02.0: [drm] *ERROR* [CRTC:51:pipe A] mismatch in hw.adjusted_mode.flags (2) (expected 0, found 2)\",\n\"[   35.419858] i915 0000:00:02.0: [drm] *ERROR* [CRTC:51:pipe A] mismatch in hw.adjusted_mode.flags (8) (expected 0, found 8)\",\n\"**************************************\",\n\" INITIALIZING NOMAD AIR KIT DATA DUMP \",\n\" ALL SYSTEMS CRITICAL \",\n\" VITAL SUPPORT SYSTEMS STATE: \",\n    ];\n\n\n    property int timer: 0\n    property int next_timer: 10\n    tick: () => {\n        if(slider_x.value === undefined)\n          return;\n        if(timer++ % next_timer !== 0)\n          return;\n        timer = 1;\n        next_timer = 5 + Math.floor(Math.random() * 20);\n        \n        var v = textLines;\n        if(!bootLog.length == 0) \n        {\n        v.push(bootLog[0]);\n        bootLog.shift();\n        \n        }else {\n              v.push(\"... \" + slider_x.value);\n               }\n               \n             if(v.length > 20)\n               v.shift();\n            textLines = v;\n          }\n}\n",
+                                        "Inlets": [
+                                            {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 0,
+                                                "Hidden": true,
+                                                "Custom": "X",
+                                                "Exposed": "x",
+                                                "Value": {
+                                                    "Float": 0.5
+                                                },
+                                                "Domain": {
+                                                    "Float": {
+                                                        "Min": 0.0,
+                                                        "Max": 100.0
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 1,
+                                                "Hidden": true,
+                                                "Custom": "Y",
+                                                "Exposed": "y",
+                                                "Value": {
+                                                    "Float": 0.5
+                                                },
+                                                "Domain": {
+                                                    "Float": {
+                                                        "Min": 0.0,
+                                                        "Max": 100.0
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "Outlets": [
+                                            {
+                                                "uuid": "f1c71046-b754-49a5-8e66-d01374773dfc",
+                                                "ObjectName": "Outlet",
+                                                "id": 0,
+                                                "Hidden": false
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "uuid": "74ca45ff-92c9-44a0-8f1a-754dea05ee1b",
+                                        "ObjectName": "gfxProcess",
+                                        "id": 4,
+                                        "Metadata": {
+                                            "ScriptingName": "Color Levels",
+                                            "Comment": "",
+                                            "Color": "Transparent1",
+                                            "Label": "",
+                                            "Touched": true
+                                        },
+                                        "Duration": 4839189101,
+                                        "Height": 300.0,
+                                        "StartOffset": 0,
+                                        "LoopDuration": 4839189101,
+                                        "Pos": [
+                                            55.734375,
+                                            49.0
+                                        ],
+                                        "Size": [
+                                            109.546875,
+                                            22.0
+                                        ],
+                                        "Loops": false,
+                                        "Vertex": "",
+                                        "Fragment": "/*{\n\t\"CREDIT\": \"by VIDVOX\",\n\t\"ISFVSN\": \"2\",\n\t\"CATEGORIES\": [\n\t\t\"Color Adjustment\"\n\t],\n\t\"INPUTS\": [\n\t\t{\n\t\t\t\"NAME\": \"inputImage\",\n\t\t\t\"TYPE\": \"image\"\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"minLevel\",\n\t\t\t\"LABEL\": \"Minimum Point\",\n\t\t\t\"TYPE\": \"float\",\n\t\t\t\"MIN\": 0.0,\n\t\t\t\"MAX\": 1.0,\n\t\t\t\"DEFAULT\": 0.2\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"midLevel\",\n\t\t\t\"LABEL\": \"Mid Point\",\n\t\t\t\"TYPE\": \"float\",\n\t\t\t\"MIN\": 0.0,\n\t\t\t\"MAX\": 1.0,\n\t\t\t\"DEFAULT\": 0.5\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"maxLevel\",\n\t\t\t\"LABEL\": \"Maximum Point\",\n\t\t\t\"TYPE\": \"float\",\n\t\t\t\"MIN\": 0.0,\n\t\t\t\"MAX\": 1.0,\n\t\t\t\"DEFAULT\": 0.8\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"offset1\",\n\t\t\t\"TYPE\": \"color\",\n\t\t\t\"DEFAULT\": [\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5\n\t\t\t]\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"offset2\",\n\t\t\t\"TYPE\": \"color\",\n\t\t\t\"DEFAULT\": [\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5\n\t\t\t]\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"offset3\",\n\t\t\t\"TYPE\": \"color\",\n\t\t\t\"DEFAULT\": [\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5\n\t\t\t]\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"offset4\",\n\t\t\t\"TYPE\": \"color\",\n\t\t\t\"DEFAULT\": [\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5\n\t\t\t]\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"offset5\",\n\t\t\t\"TYPE\": \"color\",\n\t\t\t\"DEFAULT\": [\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5\n\t\t\t]\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"offset6\",\n\t\t\t\"TYPE\": \"color\",\n\t\t\t\"DEFAULT\": [\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5,\n\t\t\t\t0.5\n\t\t\t]\n\t\t},\n\t\t{\n\t\t\t\"NAME\": \"levelsMode\",\n\t\t\t\"LABEL\": \"Levels Mode\",\n\t\t\t\"TYPE\": \"bool\",\n\t\t\t\"DEFAULT\": 0.0\n\t\t}\n\t]\n}*/\n\n\n\nvoid main() {\n\tvec4\t\ttmpColor = IMG_THIS_PIXEL(inputImage);\n\tfloat brightness = (tmpColor.r + tmpColor.g + tmpColor.b) * tmpColor.a / 3.0;\n\t\n\t//\tall adjustments\n\tif (brightness <= minLevel)\t{\n\t\ttmpColor = tmpColor + offset1 - 0.5;\n\t}\n\telse if (brightness <= (minLevel + midLevel)/2.0)\t{\n\t\ttmpColor = tmpColor + offset2 - 0.5;\n\t}\n\telse if (brightness <= midLevel)\t{\n\t\ttmpColor = tmpColor + offset3 - 0.5;\n\t}\n\telse if (brightness <= (maxLevel + midLevel)/2.0)\t{\n\t\ttmpColor = tmpColor + offset4 - 0.5;\n\t}\n\telse if (brightness <= maxLevel)\t{\n\t\ttmpColor = tmpColor + offset5 - 0.5;\n\t}\n\telse\t{\n\t\ttmpColor = tmpColor + offset6 - 0.5;\n\t}\t\n\t\n\tif (levelsMode)\t{\n\t\t//\tall adjustments\n\t\ttmpColor.rgb = vec3(1.0);\n\t\t\n\t\tif (brightness <= minLevel)\t{\n\t\t\ttmpColor.a = 0.0;\n\t\t}\n\t\telse if (brightness <= (minLevel + midLevel)/2.0)\t{\n\t\t\ttmpColor.a = 1.0/5.0;\n\t\t}\n\t\telse if (brightness <= midLevel)\t{\n\t\t\ttmpColor.a = 2.0/5.0;\n\t\t}\n\t\telse if (brightness <= (maxLevel + midLevel)/2.0)\t{\n\t\t\ttmpColor.a = 3.0/5.0;\n\t\t}\n\t\telse if (brightness <= maxLevel)\t{\n\t\t\ttmpColor.a = 4.0/5.0;\n\t\t}\n\t\telse\t{\n\t\t\ttmpColor.a = 1.0;\n\t\t}\n\t}\n\tgl_FragColor = clamp(tmpColor, 0.0, 1.0);\n}\n\n",
+                                        "Inlets": [
+                                            {
+                                                "uuid": "5ac86198-2d03-4830-9e41-a6d529922d29",
+                                                "ObjectName": "Inlet",
+                                                "id": 0,
+                                                "Hidden": false
+                                            },
+                                            {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 1,
+                                                "Hidden": true,
+                                                "Custom": "minLevel",
+                                                "Exposed": "minlevel",
+                                                "Value": {
+                                                    "Float": 0.20000000298023224
+                                                },
+                                                "Domain": {
+                                                    "Float": {
+                                                        "Min": 0.0,
+                                                        "Max": 1.0
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 2,
+                                                "Hidden": true,
+                                                "Custom": "midLevel",
+                                                "Exposed": "midlevel",
+                                                "Value": {
+                                                    "Float": 0.7602962851524353
+                                                },
+                                                "Domain": {
+                                                    "Float": {
+                                                        "Min": 0.0,
+                                                        "Max": 1.0
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "uuid": "af2b4fc3-aecb-4c15-a5aa-1c573a239925",
+                                                "ObjectName": "Inlet",
+                                                "id": 3,
+                                                "Hidden": true,
+                                                "Custom": "maxLevel",
+                                                "Exposed": "maxlevel",
+                                                "Value": {
+                                                    "Float": 0.09362960606813431
+                                                },
+                                                "Domain": {
+                                                    "Float": {
+                                                        "Min": 0.0,
+                                                        "Max": 1.0
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "uuid": "8f38638e-9f9f-48b0-ae36-1cba86ef5703",
+                                                "ObjectName": "Inlet",
+                                                "id": 4,
+                                                "Hidden": true,
+                                                "Custom": "offset1",
+                                                "Exposed": "offset1",
+                                                "Value": {
+                                                    "Vec4f": [
+                                                        0.32594797015190125,
+                                                        0.4622415602207184,
+                                                        0.5000076293945313,
+                                                        1.0
+                                                    ]
+                                                },
+                                                "Domain": {}
+                                            },
+                                            {
+                                                "uuid": "8f38638e-9f9f-48b0-ae36-1cba86ef5703",
+                                                "ObjectName": "Inlet",
+                                                "id": 5,
+                                                "Hidden": true,
+                                                "Custom": "offset2",
+                                                "Exposed": "offset2",
+                                                "Value": {
+                                                    "Vec4f": [
+                                                        0.5,
+                                                        0.5,
+                                                        0.5,
+                                                        0.5
+                                                    ]
+                                                },
+                                                "Domain": {}
+                                            },
+                                            {
+                                                "uuid": "8f38638e-9f9f-48b0-ae36-1cba86ef5703",
+                                                "ObjectName": "Inlet",
+                                                "id": 6,
+                                                "Hidden": true,
+                                                "Custom": "offset3",
+                                                "Exposed": "offset3",
+                                                "Value": {
+                                                    "Vec4f": [
+                                                        0.5,
+                                                        0.5,
+                                                        0.5,
+                                                        0.5
+                                                    ]
+                                                },
+                                                "Domain": {}
+                                            },
+                                            {
+                                                "uuid": "8f38638e-9f9f-48b0-ae36-1cba86ef5703",
+                                                "ObjectName": "Inlet",
+                                                "id": 7,
+                                                "Hidden": true,
+                                                "Custom": "offset4",
+                                                "Exposed": "offset4",
+                                                "Value": {
+                                                    "Vec4f": [
+                                                        0.5,
+                                                        0.5,
+                                                        0.5,
+                                                        0.5
+                                                    ]
+                                                },
+                                                "Domain": {}
+                                            },
+                                            {
+                                                "uuid": "8f38638e-9f9f-48b0-ae36-1cba86ef5703",
+                                                "ObjectName": "Inlet",
+                                                "id": 8,
+                                                "Hidden": true,
+                                                "Custom": "offset5",
+                                                "Exposed": "offset5",
+                                                "Value": {
+                                                    "Vec4f": [
+                                                        0.5,
+                                                        0.5,
+                                                        0.5,
+                                                        0.5
+                                                    ]
+                                                },
+                                                "Domain": {}
+                                            },
+                                            {
+                                                "uuid": "8f38638e-9f9f-48b0-ae36-1cba86ef5703",
+                                                "ObjectName": "Inlet",
+                                                "id": 9,
+                                                "Hidden": true,
+                                                "Custom": "offset6",
+                                                "Exposed": "offset6",
+                                                "Value": {
+                                                    "Vec4f": [
+                                                        0.5,
+                                                        0.5,
+                                                        0.5,
+                                                        0.5
+                                                    ]
+                                                },
+                                                "Domain": {}
+                                            },
+                                            {
+                                                "uuid": "fb27e4cb-ea7f-41e2-ad92-2354498c1b6b",
+                                                "ObjectName": "Inlet",
+                                                "id": 10,
+                                                "Hidden": true,
+                                                "Custom": "levelsMode",
+                                                "Exposed": "levelsmode",
+                                                "Value": {
+                                                    "Bool": false
+                                                },
+                                                "Domain": {
+                                                    "Bool": null
+                                                }
+                                            }
+                                        ],
+                                        "Outlets": [
+                                            {
+                                                "uuid": "f1c71046-b754-49a5-8e66-d01374773dfc",
+                                                "ObjectName": "Outlet",
+                                                "id": 1,
+                                                "Hidden": false,
+                                                "Address": "Window:/"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "uuid": "32dc5341-7748-4c31-a226-82e6bd685744",
+                                        "ObjectName": "VideoProcess",
+                                        "id": 5,
+                                        "Metadata": {
+                                            "ScriptingName": "DSCF8170",
+                                            "Comment": "",
+                                            "Color": "Transparent1",
+                                            "Label": "",
+                                            "Touched": true
+                                        },
+                                        "Duration": 4839189101,
+                                        "Height": 300.0,
+                                        "StartOffset": 0,
+                                        "LoopDuration": 283557120235,
+                                        "Pos": [
+                                            40.0,
+                                            40.0
+                                        ],
+                                        "Size": [
+                                            200.0,
+                                            100.0
+                                        ],
+                                        "Loops": true,
+                                        "Inlets": [],
+                                        "Outlets": [
+                                            {
+                                                "uuid": "f1c71046-b754-49a5-8e66-d01374773dfc",
+                                                "ObjectName": "Outlet",
+                                                "id": 0,
+                                                "Hidden": false
+                                            }
+                                        ],
+                                        "FilePath": "<PROJECT>:concordia/research/air-filtration/hap/champDesPossibles_Aug18_2PM.mov",
+                                        "Scale": 0,
+                                        "Tempo": 120.0,
+                                        "IgnoreTempo": false
+                                    }
+                                ],
+                                "SmallViewRack": [
+                                    {
+                                        "Processes": [
+                                            1,
+                                            4
+                                        ],
+                                        "Process": null,
+                                        "Height": 379.0,
+                                        "Nodal": true
+                                    },
+                                    {
+                                        "Processes": [
+                                            2
+                                        ],
+                                        "Process": 2,
+                                        "Height": 50.0,
+                                        "Nodal": false
+                                    },
+                                    {
+                                        "Processes": [
+                                            3
+                                        ],
+                                        "Process": 3,
+                                        "Height": 50.0,
+                                        "Nodal": false
+                                    },
+                                    {
+                                        "Processes": [
+                                            5
+                                        ],
+                                        "Process": 5,
+                                        "Height": 55.0,
+                                        "Nodal": false
+                                    }
+                                ],
+                                "FullViewRack": [
+                                    {
+                                        "Process": 0,
+                                        "Nodal": true
+                                    },
+                                    {
+                                        "Process": 2,
+                                        "Nodal": false
+                                    },
+                                    {
+                                        "Process": 3,
+                                        "Nodal": false
+                                    },
+                                    {
+                                        "Process": 5,
+                                        "Nodal": false
+                                    }
+                                ],
+                                "DefaultDuration": 4839189101,
+                                "MinDuration": 4839189101,
+                                "MaxDuration": 4839189101,
+                                "GuiDuration": 5323108011,
+                                "Speed": 1.0,
+                                "Rigidity": false,
+                                "MinNull": true,
+                                "MaxInf": true,
+                                "Signatures": [],
+                                "StartState": 1,
+                                "EndState": 2,
+                                "StartDate": 0,
+                                "HeightPercentage": 0.102,
+                                "NodalSlotHeight": 100.0,
+                                "QuantizationRate": -1.0,
+                                "Zoom": -1.0,
+                                "Center": 0,
+                                "ViewMode": 0,
+                                "SmallViewShown": true,
+                                "HasSignature": false
+                            }
+                        ],
+                        "Comments": []
+                    }
+                ],
+                "SmallViewRack": [],
+                "FullViewRack": [
+                    {
+                        "Process": 1,
+                        "Nodal": false
+                    }
+                ],
+                "DefaultDuration": 10584000000,
+                "MinDuration": 10584000000,
+                "MaxDuration": 11113200000,
+                "GuiDuration": 11642400000,
+                "Speed": 1.0,
+                "Rigidity": false,
+                "MinNull": false,
+                "MaxInf": true,
+                "Signatures": [
+                    [
+                        0,
+                        [
+                            4,
+                            4
+                        ]
+                    ]
+                ],
+                "StartState": 0,
+                "EndState": 1,
+                "StartDate": 0,
+                "HeightPercentage": 0.0,
+                "NodalSlotHeight": 100.0,
+                "QuantizationRate": -1.0,
+                "Zoom": 15120000.0,
+                "Center": 0,
+                "ViewMode": 0,
+                "SmallViewShown": false,
+                "HasSignature": true
+            },
+            "StartTimeNode": {
+                "ObjectName": "Scenario::TimeSyncModel",
+                "id": 0,
+                "Metadata": {
+                    "ScriptingName": "Sync.start",
+                    "Comment": "",
+                    "Color": "Gray",
+                    "Label": "",
+                    "Touched": true
+                },
+                "Date": 0,
+                "Events": [
+                    0
+                ],
+                "MusicalSync": -1.0,
+                "AutoTrigger": false,
+                "Start": true,
+                "Active": false,
+                "Expression": " { true == false } "
+            },
+            "EndTimeNode": {
+                "ObjectName": "Scenario::TimeSyncModel",
+                "id": 1,
+                "Metadata": {
+                    "ScriptingName": "Sync.end",
+                    "Comment": "",
+                    "Color": "Gray",
+                    "Label": "",
+                    "Touched": true
+                },
+                "Date": 10584000000,
+                "Events": [
+                    1
+                ],
+                "MusicalSync": -1.0,
+                "AutoTrigger": false,
+                "Start": false,
+                "Active": true,
+                "Expression": " { true == false } "
+            },
+            "StartEvent": {
+                "ObjectName": "Scenario::EventModel",
+                "id": 0,
+                "Metadata": {
+                    "ScriptingName": "Event.start",
+                    "Comment": "",
+                    "Color": "Emphasis4",
+                    "Label": "",
+                    "Touched": true
+                },
+                "TimeNode": 0,
+                "States": [
+                    0
+                ],
+                "Condition": "",
+                "Date": 0,
+                "Offset": 0
+            },
+            "EndEvent": {
+                "ObjectName": "Scenario::EventModel",
+                "id": 1,
+                "Metadata": {
+                    "ScriptingName": "Event.end",
+                    "Comment": "",
+                    "Color": "Emphasis4",
+                    "Label": "",
+                    "Touched": true
+                },
+                "TimeNode": 1,
+                "States": [
+                    1
+                ],
+                "Condition": "",
+                "Date": 10584000000,
+                "Offset": 0
+            },
+            "StartState": {
+                "ObjectName": "Scenario::StateModel",
+                "id": 0,
+                "Metadata": {
+                    "ScriptingName": "State.start",
+                    "Comment": "",
+                    "Color": "Base1",
+                    "Label": "",
+                    "Touched": true
+                },
+                "Event": 0,
+                "PreviousConstraint": null,
+                "NextConstraint": 0,
+                "HeightPercentage": 0.0,
+                "Messages": {
+                    "Name": "",
+                    "Accessors": [],
+                    "Unit": "none",
+                    "Previous": [],
+                    "Following": [],
+                    "User": null,
+                    "Priorities": [
+                        1,
+                        2,
+                        0
+                    ]
+                },
+                "Controls": [],
+                "StateProcesses": []
+            },
+            "EndState": {
+                "ObjectName": "Scenario::StateModel",
+                "id": 1,
+                "Metadata": {
+                    "ScriptingName": "State.end",
+                    "Comment": "",
+                    "Color": "Base1",
+                    "Label": "",
+                    "Touched": true
+                },
+                "Event": 1,
+                "PreviousConstraint": 0,
+                "NextConstraint": null,
+                "HeightPercentage": 0.0,
+                "Messages": {
+                    "Name": "",
+                    "Accessors": [],
+                    "Unit": "none",
+                    "Previous": [],
+                    "Following": [],
+                    "User": null,
+                    "Priorities": [
+                        1,
+                        2,
+                        0
+                    ]
+                },
+                "Controls": [],
+                "StateProcesses": []
+            }
+        },
+        "Speed": 1.0,
+        "Cables": [
+            {
+                "ObjectName": "Process::Cable",
+                "id": 4,
+                "Type": 0,
+                "Source": [
+                    {
+                        "ObjectName": "Scenario::ScenarioDocumentModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::BaseScenario",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "VideoProcess",
+                        "ObjectId": 5
+                    },
+                    {
+                        "ObjectName": "Outlet",
+                        "ObjectId": 0
+                    }
+                ],
+                "Sink": [
+                    {
+                        "ObjectName": "Scenario::ScenarioDocumentModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::BaseScenario",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "gfxProcess",
+                        "ObjectId": 4
+                    },
+                    {
+                        "ObjectName": "Inlet",
+                        "ObjectId": 0
+                    }
+                ]
+            },
+            {
+                "ObjectName": "Process::Cable",
+                "id": 1,
+                "Type": 0,
+                "Source": [
+                    {
+                        "ObjectName": "Scenario::ScenarioDocumentModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::BaseScenario",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Automation",
+                        "ObjectId": 2
+                    },
+                    {
+                        "ObjectName": "Outlet",
+                        "ObjectId": 0
+                    }
+                ],
+                "Sink": [
+                    {
+                        "ObjectName": "Scenario::ScenarioDocumentModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::BaseScenario",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Javascript",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Inlet",
+                        "ObjectId": 0
+                    }
+                ]
+            },
+            {
+                "ObjectName": "Process::Cable",
+                "id": 2,
+                "Type": 0,
+                "Source": [
+                    {
+                        "ObjectName": "Scenario::ScenarioDocumentModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::BaseScenario",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Automation",
+                        "ObjectId": 3
+                    },
+                    {
+                        "ObjectName": "Outlet",
+                        "ObjectId": 0
+                    }
+                ],
+                "Sink": [
+                    {
+                        "ObjectName": "Scenario::ScenarioDocumentModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::BaseScenario",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Javascript",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Inlet",
+                        "ObjectId": 1
+                    }
+                ]
+            },
+            {
+                "ObjectName": "Process::Cable",
+                "id": 3,
+                "Type": 0,
+                "Source": [
+                    {
+                        "ObjectName": "Scenario::ScenarioDocumentModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::BaseScenario",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Javascript",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Outlet",
+                        "ObjectId": 0
+                    }
+                ],
+                "Sink": [
+                    {
+                        "ObjectName": "Scenario::ScenarioDocumentModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::BaseScenario",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 0
+                    },
+                    {
+                        "ObjectName": "Scenario",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "Scenario::IntervalModel",
+                        "ObjectId": 1
+                    },
+                    {
+                        "ObjectName": "gfxProcess",
+                        "ObjectId": 4
+                    },
+                    {
+                        "ObjectName": "Inlet",
+                        "ObjectId": 0
+                    }
+                ]
+            }
+        ],
+        "BusIntervals": []
+    },
+    "Plugins": [
+        {
+            "uuid": "1f923578-08c3-49be-9ba9-69c144ee2e32",
+            "Refresh": false,
+            "Reconnect": false,
+            "MidiRatio": 1.0
+        },
+        {
+            "uuid": "6e610e1f-9de2-4c36-90dd-0ef570002a21",
+            "RootNode": {},
+            "Children": [
+                {
+                    "Device": {
+                        "Name": "Window",
+                        "Protocol": "5a181207-7d40-4ad8-814e-879fcdf8cc31"
+                    },
+                    "Children": [
+                        {
+                            "Address": {
+                                "ioType": "<->",
+                                "ClipMode": "Free",
+                                "RepetitionFilter": false,
+                                "Value": {
+                                    "Int": 0
+                                },
+                                "Domain": {
+                                    "Int": {
+                                        "Min": 0,
+                                        "Max": 100
+                                    }
+                                },
+                                "Name": "screen"
+                            }
+                        },
+                        {
+                            "Address": {
+                                "ioType": "<->",
+                                "ClipMode": "Free",
+                                "RepetitionFilter": false,
+                                "Value": {
+                                    "Vec2f": [
+                                        0.0,
+                                        0.0
+                                    ]
+                                },
+                                "Domain": {},
+                                "Name": "position"
+                            }
+                        },
+                        {
+                            "Address": {
+                                "ClipMode": "Free",
+                                "RepetitionFilter": false,
+                                "Value": {},
+                                "Domain": {},
+                                "Name": "cursor"
+                            },
+                            "Children": [
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Vec2f": [
+                                                0.0,
+                                                0.0
+                                            ]
+                                        },
+                                        "Domain": {
+                                            "Float": {
+                                                "Min": 0.0,
+                                                "Max": 1.0
+                                            }
+                                        },
+                                        "Name": "scaled"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Vec2f": [
+                                                0.0,
+                                                0.0
+                                            ]
+                                        },
+                                        "Domain": {
+                                            "Vec2f": {
+                                                "Min": [
+                                                    0.0,
+                                                    0.0
+                                                ],
+                                                "Max": [
+                                                    0.0,
+                                                    0.0
+                                                ],
+                                                "Values": [
+                                                    [],
+                                                    []
+                                                ]
+                                            }
+                                        },
+                                        "Name": "absolute"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Address": {
+                                "ClipMode": "Free",
+                                "RepetitionFilter": false,
+                                "Value": {},
+                                "Domain": {},
+                                "Name": "tablet"
+                            },
+                            "Children": [
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Vec2f": [
+                                                0.0,
+                                                0.0
+                                            ]
+                                        },
+                                        "Domain": {
+                                            "Float": {
+                                                "Min": 0.0,
+                                                "Max": 1.0
+                                            }
+                                        },
+                                        "Name": "scaled"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Vec2f": [
+                                                0.0,
+                                                0.0
+                                            ]
+                                        },
+                                        "Domain": {
+                                            "Vec2f": {
+                                                "Min": [
+                                                    0.0,
+                                                    0.0
+                                                ],
+                                                "Max": [
+                                                    1280.0,
+                                                    720.0
+                                                ],
+                                                "Values": [
+                                                    [],
+                                                    []
+                                                ]
+                                            }
+                                        },
+                                        "Name": "absolute"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Int": 0
+                                        },
+                                        "Domain": {},
+                                        "Name": "z"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Float": 0.0
+                                        },
+                                        "Domain": {},
+                                        "Name": "pressure"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Float": 0.0
+                                        },
+                                        "Domain": {
+                                            "Float": {
+                                                "Min": -1.0,
+                                                "Max": 1.0
+                                            }
+                                        },
+                                        "Name": "tangential"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "Unit": "angle.degree",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Float": 0.0
+                                        },
+                                        "Domain": {
+                                            "Float": {
+                                                "Min": -180.0,
+                                                "Max": 180.0
+                                            }
+                                        },
+                                        "Name": "rotation"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "Unit": "angle.degree",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Float": 0.0
+                                        },
+                                        "Domain": {
+                                            "Float": {
+                                                "Min": -60.0,
+                                                "Max": 60.0
+                                            }
+                                        },
+                                        "Name": "tilt_x"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "Unit": "angle.degree",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Float": 0.0
+                                        },
+                                        "Domain": {
+                                            "Float": {
+                                                "Min": -60.0,
+                                                "Max": 60.0
+                                            }
+                                        },
+                                        "Name": "tilt_y"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Address": {
+                                "ioType": "<->",
+                                "ClipMode": "Free",
+                                "RepetitionFilter": false,
+                                "Value": {
+                                    "Vec2f": [
+                                        1280.0,
+                                        720.0
+                                    ]
+                                },
+                                "Domain": {},
+                                "Name": "size"
+                            }
+                        },
+                        {
+                            "Address": {
+                                "ioType": "<->",
+                                "ClipMode": "Free",
+                                "RepetitionFilter": false,
+                                "Value": {
+                                    "Vec2f": [
+                                        0.0,
+                                        0.0
+                                    ]
+                                },
+                                "Domain": {},
+                                "Extended": {
+                                    "description": "Set to [0, 0] to use the viewport's size"
+                                },
+                                "Name": "rendersize"
+                            }
+                        },
+                        {
+                            "Address": {
+                                "ClipMode": "Free",
+                                "RepetitionFilter": false,
+                                "Value": {},
+                                "Domain": {},
+                                "Name": "key"
+                            },
+                            "Children": [
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "Int": 0
+                                        },
+                                        "Domain": {},
+                                        "Name": "code"
+                                    }
+                                },
+                                {
+                                    "Address": {
+                                        "ioType": "<->",
+                                        "ClipMode": "Free",
+                                        "RepetitionFilter": false,
+                                        "Value": {
+                                            "String": ""
+                                        },
+                                        "Domain": {},
+                                        "Name": "text"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Address": {
+                                "ioType": "<->",
+                                "ClipMode": "Free",
+                                "RepetitionFilter": false,
+                                "Value": {
+                                    "Bool": false
+                                },
+                                "Domain": {},
+                                "Name": "fullscreen"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Version": 4,
+    "Commit": "abfeb0c3cb556e25c7945362b2da7f0795816e13",
+    "Tag": "3.1.11"
+}
